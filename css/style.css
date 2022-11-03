@@ -257,9 +257,18 @@ button {
 /*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
 
 .header {
+     position:absolute;
+     top: 10px;
+     left: 0;
      width: 100%;
+
+     /* padding: 30px 100px; */
+     /* display: flex;
+     justify-content: space-between; */
+    
+     z-index: 10000;
      position: relative;
-     padding-left: 0;
+     /* padding-left: 0; */
 }
 
 .header_full_bg {
@@ -267,17 +276,57 @@ button {
      background: #AAAAAA;
 }
 
-.header_top {
+/* .header_top {
      padding: 35px 0px;
      position: absolute;
      width: 100%;
-}
+} */
 
 .logo a img {
      z-index: 9999;
      position: relative;
 }
+/* Nav Bar */
 
+   
+   li {
+     float: left;
+     display: inline;
+     /* border-right:1px solid #bbb; */
+     /* padding-right: 1%; */
+     /* padding-left: 1%; */
+     /* justify-content: space-between; */
+     align-items: center;
+     border-radius: 50%;
+     list-style: None;
+     /* margin-left: 20px; */
+     /* margin-right: 20px; */
+     
+   }
+   
+   li:last-child {
+     border-right: none;
+   }
+   
+   li a {
+     /* display: flex; */
+     /* color: white; */
+     color: #000;
+     /* text-align: center; */
+     padding: 14px 16px;
+     
+     text-decoration: none;
+   }
+   
+   li a:hover:not(.active) {
+     background-color: #111;
+     /* border-radius: 20%; */
+   }
+   
+   .active {
+     background-color: #04AA6D;
+     /* border-radius: 20%; */
+   }
 
 /*-- navigation--*/
 
@@ -461,7 +510,8 @@ ul.social_icon li a:hover {
      /* background: #456ef7; */
      background: #f1f1f1;
      border: #000;
-     border-style:dashed;
+     border-style:dashed ;
+     padding: 1%;
      color: black;
      transition: ease-in all 0.5s;
 }
@@ -487,9 +537,10 @@ ul.social_icon li a:hover {
 }
 .read_more:hover{
      transform: translate(0px,-8px);
+     /* padding: 2%; */
 }
 .read_more{
-     border-radius: 40px;;
+     border-radius: 40px;
 }
 .protien figure {
      margin: 0;
