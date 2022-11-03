@@ -972,3 +972,44 @@ ul.social2_icon li a:hover {
 
 
 /** end footer **/
+
+/* My Cart */
+.cartCont{
+     padding-top: 5%;
+     padding-bottom: 25%;
+}
+.myProd{
+     height: 50%;
+     width: 30%;
+     float: left;
+     justify-content: center;
+}
+.chkout{
+     padding: 10px;
+     background-color: #04AA6D;
+     border: #000;
+     border-style: groove;
+     border-radius: 40px;
+     width: 25%;
+}
+.chkout:hover{
+     background-color: yellow;
+     transform: translate(0px,-8px);
+     transition: ease-in all 0.5s;
+     border-style: dashed;
+}
+.prodDes{
+     padding-top: 5%;
+     height: 50%;
+     width: 50%;
+     float: right;
+     margin-right: 5%;
+}
+#price{
+     font-size: 40px;
+     /* padding: 5%; */
+}
+p{
+     padding-bottom: 5%;
+}
+
